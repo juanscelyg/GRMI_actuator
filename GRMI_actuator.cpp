@@ -40,12 +40,7 @@ GRMI_actuator::GRMI_actuator(int mode){
 }
 
 void GRMI_actuator::begin(){
-  set_direction(Inside);
-  enable();
-  while(!low_state){
-    move(time_step);
-  }
-  disable();
+  close(time_step);
 }
 
 void GRMI_actuator::enable(){

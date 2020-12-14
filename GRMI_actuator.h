@@ -52,7 +52,7 @@ public:
   byte high_state = LOW;
   byte low_state = LOW;
 
-  int time_step = 500;
+  int time_step = 1500;
 private:
   int _mode=0;
 };
